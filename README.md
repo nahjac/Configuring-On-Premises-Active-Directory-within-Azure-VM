@@ -1,5 +1,4 @@
 # Configuring-On-Premises-Active-Directory-within-Azure-VM
-# Deploying-Web-Server-within-Azure-VM
 This tutorial outlines the implementation of an Ubuntu web server within an Azure virtual machine.
 ## Environments and Technologies Used
 + Microsoft Azure (Virtual Machine)
