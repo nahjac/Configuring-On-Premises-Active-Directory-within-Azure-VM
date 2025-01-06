@@ -28,4 +28,8 @@ Log back into Client-1 using Microsoft Remote Desktop using the original local a
 *pic of something*
 Now let's setup Remote Desktop for non-admin users on Client-1. Login to Client-1 as an admin (mydomain.com\jane_admin). Once again right-click the Start menu and select System. Select Remote Desktop. Type in the name of your domain users and click OK. You can add as many additional users as you like.
 *pic of remote desktop settings*
-You should now be able to login to Client-1 as a a normal user. Now let's verify that normal users can RDP into Client-1. Log back into DC-1 using jane_admin. Open Powershell ISE and run as administrator. In the top left corner select "New Script". Paste the contents of [this script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1).
+You should now be able to login to Client-1 as a normal user. To verify that normal users can RDP into Client-1, log back into DC-1 using jane_admin. Open Powershell ISE and run as administrator. In the top left corner select "New Script". Paste the contents of [this script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1). Run the script by clicking the green arrow at the top of the screen.
+*pic of script and where green arrow is*
+Once the users have been created, go back to AD Users and Computers > mydomain.com > _EMPLOYEES. Attempt to log in to Client-1 using one of the accounts that were created.
+*pic of list of employees and pic of logging in to one of them*
+As you can see we've successfully login using a normal user. Congrats! You've implemented on-premises Active Directory and created users within Azure VM.
