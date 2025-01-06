@@ -20,4 +20,4 @@ To fix this, enable ICMPv4 on DC-1's local Windows firewall. Login to DC-1 using
 *pic of inbound rules in firewall settings*
 Once you log back in to Client-1 and open the command line prompt, DC-1 will automatically start to be pinged. Now we will need to install Active Directory. Log back in to DC-1 and open Server Manager. Select "Add Roles and Features" make sure "Active Directory Domain Services" is selected when you get to the Server Roles portion of the configuration. Once installation is complete, promote the server to a domain controller which can be found in the Server Manager Dashboard. Setup a new Forest with a domain name of "mydomain.com". Create a password and allow installation to complete. DC-1 will automatically restart. Login as user "mydomain.com\labuser". If you completed these steps correctly, you should be able to run AD Users & Computers.
 *pic of ad users and computers open*
-
+Now, let's create an admin account and a normal user account in AD. While in AD Users & Computers, right click mydomain.com and create 2 new Organization Units (OUs). Name the first one "_EMPLOYEES" and the second one "_ADMINS". 
